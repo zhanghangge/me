@@ -13,7 +13,8 @@ def is_odd(a_number):
         answer = False
     else:
         # it's odd
-        return True
+        answer = True
+    return answer
     
 
 def fix_it(moves=True, should_move=True):
@@ -40,8 +41,11 @@ def fix_it(moves=True, should_move=True):
 
     else: 
         return  "No Problem"
-       
 
+    # for loops
+    my_list = [1,2,3,4]
+    for value in my_list
+    
 
 def loops_1a():
     """Make 10 stars.
@@ -50,8 +54,10 @@ def loops_1a():
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-    return loops_1a - tenStar
-
+    list = []
+    for i in range (10):
+        list.append("*")
+    return list
 
 def loops_1c(number_of_items=5, symbol="#"):
     """Respond to variables.
@@ -60,7 +66,10 @@ def loops_1c(number_of_items=5, symbol="#"):
     string with exacly one symbol in it.
     E.g.: ['#', '#', '#', '#', '#']
     """
-    return loops_1c - 5 "#"
+    list = []
+    for i in range (int(number_of_items)):
+        list.append(symbol)
+    return list
 
 
 def loops_2():
@@ -81,8 +90,13 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-    return loops_2 10 * 10 stars
-
+    list1 = []
+    for a in range (10):
+        list2 = []
+        for i in range (10):
+            list2.append("*")
+        list1.append =(list2)
+    return list1
 
 def loops_3():
     """Make a rising block of numbers.
@@ -105,8 +119,11 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    return loops_3 - qo 
-
+    list1 = []
+    for a in range (10):
+        list2 = []
+        
+   
 
 def loops_4():
     """Make a block of numbers that rises left to right.
