@@ -42,9 +42,7 @@ def fix_it(moves=True, should_move=True):
     else: 
         return  "No Problem"
 
-    # for loops
-    my_list = [1,2,3,4]
-    for value in my_list
+  
     
 
 def loops_1a():
@@ -54,10 +52,10 @@ def loops_1a():
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-    list = []
+    a = []
     for i in range (10):
-        list.append("*")
-    return list
+        a.append["*"]
+    return a
 
 def loops_1c(number_of_items=5, symbol="#"):
     """Respond to variables.
@@ -66,10 +64,10 @@ def loops_1c(number_of_items=5, symbol="#"):
     string with exacly one symbol in it.
     E.g.: ['#', '#', '#', '#', '#']
     """
-    list = []
+    c = []
     for i in range (int(number_of_items)):
-        list.append(symbol)
-    return list
+        c.append(symbol)
+    return c
 
 
 def loops_2():
