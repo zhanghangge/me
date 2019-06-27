@@ -25,6 +25,6 @@ while idx < len(my_list)
     print(my_list[idx])
     idx = idx + 1
 
-# 
+
 
 
