@@ -3,7 +3,7 @@ Commenting skills:
 
 TODO: above every line of code comment what you THINK the line below does.
 TODO: execute that line and write what actually happened next to it.
-
+#week2 exe1
 See example for first print statement
 """
 import platform

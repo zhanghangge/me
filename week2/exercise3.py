@@ -54,7 +54,7 @@ def loops_1a():
     """
     a = []
     for i in range (10):
-        a.append["*"]
+        a.append("*")
     return a
 
 def loops_1c(number_of_items=5, symbol="#"):
@@ -93,7 +93,7 @@ def loops_2():
         list2 = []
         for i in range (10):
             list2.append("*")
-        list1.append =(list2)
+        list1.append(list2)
     return list1
 
 def loops_3():
@@ -117,9 +117,7 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    list1 = []
-    for a in range (10):
-        list2 = []
+    return None
         
    
 
@@ -140,7 +138,13 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    return loops_4 - 10
+    list1 = []
+    for a in range (10):
+        list2 = []
+        for b in range (10):
+            list2.append(str(b))
+        list1.append(list2)
+    return list1
 
 
 def loops_5():
@@ -167,7 +171,13 @@ def loops_5():
         "There are {} green bottles".format(8)
     you'll come to see the pros and cons of each over time.
     """
-    return None
+    list1 = []
+    for a in range (10):
+        list2 = []
+        for b in range (5):
+            list2.append("(" + "i" + str(a) + "," + " " + "j" + str(b)+  ")")
+        list1.append(list2)
+    return list1
 
 
 def loops_6():
@@ -190,7 +200,13 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    return None
+    list1 = []
+    for a in range (10):
+        list2 = []
+        for b in range(a+1):
+            list2.append(str(b))
+        list1.append(list2)
+    return list1
 
 
 def loops_7():
@@ -214,7 +230,20 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    return None
+    
+    list1 = []
+    for a in range (1,6):
+        list2 = []
+        for b in range (1,10):
+            x = 0 
+            y = 5
+            if b > y - a and b < y + a:
+                list2.append("*")
+            else:
+                list2.append(" ")
+            x = x + 1
+        list1.append(list2)
+    return list1
 
 
 def lp(some_kind_of_list, exercise_name):

@@ -5,7 +5,7 @@ Go through it and change it until it runs.
 Remeber that all files must also pass the
 linter with no errors or warnings!
 """
-
+#week2 exe2
 import string
 
 def getLetter(index):
