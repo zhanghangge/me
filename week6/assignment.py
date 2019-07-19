@@ -12,7 +12,7 @@ from networks import get_graph_path, model_wh
 import platform
 import os
 
-#Garry Zhang
+
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 logger = logging.getLogger('TfPoseEstimator-WebCam')
