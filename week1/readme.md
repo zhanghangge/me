@@ -1,6 +1,6 @@
-TODO: Reflect on what you learned this week and what is still uncle
-#From this week I've stared to code by starting w commanding to print "Hello World"
-#And get to know a little bit about coding in python..
+__WEEK 1 :__
+  From this week I've stared to code by starting w commanding to `<print>` "Hello World"
+  And get to know a little bit about coding in python..
 1. **mkdir** = make direction : *make a new folder in a specific directory* 
 2. **cd** = change directory : *change the directory to find the file/folder* 
 3. use `<git clone + url>` to lone the url from github to use the file from github,
