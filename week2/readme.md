@@ -7,16 +7,17 @@ The most useful functions that I've learnt for this week is about the `<if/elif/
 However, I still can't solve the loop questions but I found that for the loop ones we could use "_for in_" or "_while in_" commands. 
 
 Also there was a bug in my python exercises which I still couldn't find out why is that there was a "__type error__" which occurred in my coding n I thought it was because that the  python dictionary has no things like "_string_". This is a very complicated issue which made me unable to finish the following questions from exercise 2 so I got stuck. 
- 
- # I finally found out the problem of why I couldn't get mark from the exercises and I figured out the idea of for in loops and started to change some problems for the exercise. :smiley:
 
- # Important links
+I finally found out the problem of why I couldn't get mark from the exercises and I figured out the idea of for in loops and started to change some problems for the exercise. :smiley:
+
+   __Important links :__
+
    1. [__Mastering markdown__] : (https://guides.github.com/features/mastering-markdown/) _(style the texts)_
 
    2. [__String Methods Library__] : (https://docs.python.org/3/library/string.html)
 
 
- # Weekly notes for the exercises
+  __Weekly notes for the exercises :__
 
  1. When writing the codes, always remember to `<return>` to have the code finished.
  
