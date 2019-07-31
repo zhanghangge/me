@@ -9,13 +9,13 @@ def is_odd(a_number):
     """
     answer = None
     if a_number % 2 == 0: 
-        # it's even 
+        # it's even
         answer = False
     else:
         # it's odd
         answer = True
-    return answer
-    
+    return answer 
+
 
 def fix_it(moves=True, should_move=True):
     """Decide what to do.
@@ -64,10 +64,10 @@ def loops_1c(number_of_items=5, symbol="#"):
     string with exacly one symbol in it.
     E.g.: ['#', '#', '#', '#', '#']
     """
-    c = []
-    for i in range (int(number_of_items)):
-        c.append(symbol)
-    return c
+    xdd = []
+    for i in range (number_of_items):
+        xdd.append(symbol)
+    return xdd
 
 
 def loops_2():
@@ -117,8 +117,13 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    return None
-        
+    list1 = []
+    for i in range (10):
+        list2 = []
+        for a in range (10):
+            list2.append(str(i))
+        list1.append(list2)
+    return list1      
    
 
 def loops_4():
@@ -172,13 +177,13 @@ def loops_5():
     you'll come to see the pros and cons of each over time.
     """
     list1 = []
-    for a in range (10):
+    for i in range (10):
         list2 = []
-        for b in range (5):
-            list2.append("(" + "i" + str(a) + "," + " " + "j" + str(b)+  ")")
+        for a in range(5):
+            list2.append("(" + "i" + str(i) + "," + " " + "j" + str(a) + ")")
         list1.append(list2)
     return list1
-
+       
 
 def loops_6():
     """Make a wedge of numbers.
@@ -204,7 +209,7 @@ def loops_6():
     for a in range (10):
         list2 = []
         for b in range(a+1):
-            list2.append(str(b))
+            list2.append(str(a))
         list1.append(list2)
     return list1
 

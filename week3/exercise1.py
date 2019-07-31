@@ -89,9 +89,9 @@ def super_asker(low, high):
     """
     answer = False
     while answer != True:
-       num1 = not_number_rejector("Insert a number that is larger than " + str(low) + "and less than"
-       if int(num1) > low and int(num1) < high   
-          answer = True 
+       num1 = not_number_rejector("Insert a number that is larger than " + str(low) + "and less than ")
+       if int(num1) > low and int(num1) < high:
+           answer = True 
     return num1 
 
 

@@ -8,7 +8,7 @@ import random
 
 def advancedGuessingGame():
     """Play a guessing game with a user.
-
+*
     The exercise here is to rewrite the exampleGuessingGame() function
     from exercise 3, but to allow for:
     * a lower bound to be entered, e.g. guess numbers between 10 and 20
@@ -25,6 +25,9 @@ def advancedGuessingGame():
     Remember to think modular. Try to keep your functions small and single
     purpose if you can!
     """
+
+    
+  
 
     return "You got it!"
     # the tests are looking for the exact string "You got it!". Don't modify that!
