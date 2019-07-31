@@ -15,7 +15,6 @@ In each function, where you see:
 replace None with the actual answer.
 
 """
-#week2 exe0
 
 
 def add_1(a_number):
@@ -26,6 +25,7 @@ def add_1(a_number):
     This is an example function to get you started. 
     Run the tests now and this one should go green. Free marks!
     """
+    
     the_answer = a_number + 1
 
     return the_answer

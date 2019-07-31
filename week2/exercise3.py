@@ -184,6 +184,9 @@ def loops_5():
         list1.append(list2)
     return list1
        
+   
+   
+
 
 def loops_6():
     """Make a wedge of numbers.
