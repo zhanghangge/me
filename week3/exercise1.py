@@ -54,7 +54,7 @@ def stubborn_asker(low, high):
     Look up the docs for input
     """
     while True: 
-        t = input("enter a number between {} and {}".format (low,high))
+        t = input("enter a number between {} and {}: ".format (low,high))
         t = int(t)
         if t< high and t > low:
             return t
@@ -66,16 +66,15 @@ def not_number_rejector(message):
     (e.g. "cow", "six", "8!") then throw it out and ask for an actual number.
     When you do get a number, return it.
     """
-    answer = False
-    while answer != True:
-        t = input ('message')
-        try: 
-            val = int('t')
-            print('t')
-            answer = True
-            return t
-        except ValueError:
-            answer = False
+    while True : 
+        try :
+            print(message)
+            not_number_input = int(input())
+        except Exception:
+            pass
+        else:
+            break
+    return not_number_input
         
 
 
@@ -87,12 +86,16 @@ def super_asker(low, high):
     Try to call at least one of the other functions to minimise the
     amount of code.
     """
-    answer = False
-    while answer != True:
-       num1 = not_number_rejector("Insert a number that is larger than " + str(low) + "and less than ")
-       if int(num1) > low and int(num1) < high:
-           answer = True 
-    return num1 
+    number = not_number_rejector("Enter a number: ")
+    while number < low or number > high: 
+        if number < low:
+            print("Out of bounds, too low")
+            number = not_number_rejector("Enter a number: ")
+        else:
+            print("Out of bounds, too high")
+            number = not_number_rejector("Enter a number: ")
+
+    return number
 
 
 if __name__ == "__main__":
