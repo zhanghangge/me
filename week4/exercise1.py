@@ -96,7 +96,7 @@ def wordy_pyramid():
                 pass
             else:
                 randword = str(randword)
-                if int(a) % 2 ==0:
+                if int(a) % 2 == 0:
                     list2.append(randword[2:len(randword)-1])
                 else:
                     list1.append(randword[2:len(randword)-1])
