@@ -39,10 +39,10 @@ def get_some_details():
     password = ["results"]["0"]["login"]["password"]
     postcode = ["results"]["0"]["location"]["postcode"]
     id_value = ["results"]["0"]["id"]["value"]
-    id_value = int(id_value)
+    id = int(id_value)
     postcode = int(postcode)
-    A = postcode + id_value
-    return {"lastName": last_name, "password": password, "postcodePlusID": A}
+    postcodePlusID = id_value + postcode
+    return {"lastName": last_name, "PassWord": password, "postcodePlusID": postcodePlusID}
 
 
 
@@ -81,7 +81,29 @@ def wordy_pyramid():
     ]
     TIP: to add an argument to a URL, use: ?argName=argVal e.g. &minLength=
     """
-    pass
+    url = "https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength={len}"
+    min = 3
+    max = 20
+    list0 = []
+    list1 = []
+    list2 = []
+    for a in range(min,max+1):
+        fullurl=url.format(len=a)
+        pull = requests.get(fullurl)   
+        if pull.status_code is 200:         
+            randomWord = pull.content  
+            if randomWord is None: 
+                pass
+            else:
+                randword = str(randword)
+                if int(a) % 2 ==0:
+                    list2.append(randword[2:len(randword)-1])
+                else:
+                    list1.append(randword[2:len(randword)-1])
+    list2.reverse()
+    list0.extend(list1)
+    list0.extend(list2)
+    return list0
 
 
 def pokedex(low=1, high=5):
@@ -100,11 +122,28 @@ def pokedex(low=1, high=5):
     """
     template = "https://pokeapi.co/api/v2/pokemon/{id}"
 
-    url = template.format(base=base, id=5)
+    index = -1
+    tallest = -1
+
+    for x in range (low, high):
+        url = template.format(base=template,id=x)
+        r = requests.get(url)
+        if r.status_code is 200:
+            data = json.loads(r.text)
+            height = data["height"]
+            if height > tallest:
+                tallest = height
+                index = x
+
+    url = template.format(base=template,id=index)
     r = requests.get(url)
     if r.status_code is 200:
-        the_json = json.loads(r.text)
-    return {"name": None, "weight": None, "height": None}
+        data = json.loads(r.text)
+        answer1 = data["name"]
+        answer2 = data["weight"]
+        answer3 = data["height"]
+    return {"name": answer1, "weight": answer2, "height": answer3}
+
 
 
 def diarist():
@@ -121,7 +160,15 @@ def diarist():
          the test will have nothing to look at.
     TIP: this might come in handy if you need to hack a 3d print file in the future.
     """
-    pass
+    gcode_data = open(LOCAL + "/Trispokedovetiles(laser).gcode").readlines()
+    number_of_times = 0
+    for cactusLine in gcode_data:
+        print (cactusLine)
+        if "M10 P1" in cactusLine:
+            number_of_times += 1
+    f = open("lasers.pew", "w")
+    f.write(str(number_of_times))
+    f.close
 
 
 if __name__ == "__main__":
