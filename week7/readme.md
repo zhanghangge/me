@@ -1,1 +1,1 @@
-TODO: Reflect on what you learned this week and what is still unclear.
+From this week I started to do my data analysis project.
