@@ -17,7 +17,7 @@ def greet(name="Towering Timmy"):
     return a string of "Hello" and the name argument.
     E.g. if given as "Towering Timmy" it should return "Hello Towering Timmy"
     """
-    greet = str("Hello") + name
+    print("Hello" + input(name))
     return greet
     
 
@@ -27,8 +27,7 @@ def three_counter(input_list=[1, 4, 3, 5, 7, 1, 3, 2, 3, 3, 5, 3, 7]):
     Return an integer.
     TIP: the test will use a different input_list, so don't just return 5
     """
-    count = 2,6,8,9,11
-
+    count = input_list.count(3)
     return count
 
 
@@ -68,7 +67,8 @@ def put_behind_bars(input_string="very naughty boy"):
     """
     n = list(input_string)
     print("|" + "|".join(n) + "|")
-    return n
+
+    return put_behind_bars
 
 
 
@@ -86,12 +86,10 @@ def pet_filter(letter="a"):
             "hedgehog","guppy",]
     # fmt: on
     for name in pets:
-        if letter in pets:
+        if letter in name:
             print(name)
-        else:
-            pets.append(" ")
-
-    return pets
+    
+    return pet_filter
 
 
 def best_letter_for_pets():
@@ -101,7 +99,22 @@ def best_letter_for_pets():
     """
     import string
 
+    pets = [
+            "dog", "goat","pig","sheep","cattle","zebu","cat","chicken",
+            "guinea pig","donkey","duck","water buffalo","western honey bee",
+            "dromedary camel","horse","silkmoth","pigeon","goose","yak",
+            "bactrian camel","llama","alpaca","guineafowl","ferret",
+            "muscovy duck","barbary dove","bali cattle","gayal","turkey",
+            "goldfish","rabbit","koi","canary","society finch","fancy mouse",
+            "siamese fighting fish","fancy rat and lab rat","mink","red fox",
+            "hedgehog","guppy",]
+
     the_alphabet = string.ascii_lowercase
+
+    for name in pets:
+        if the_alphabet in name:
+            print(name)
+        
 
     return ""
 
@@ -131,7 +144,11 @@ def make_filler_text_dictionary():
     TIP: you'll need the requests library
     """
 
-    import requests
+    
+
+
+
+
 
     return {}
 
