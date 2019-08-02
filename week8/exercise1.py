@@ -85,6 +85,7 @@ def pet_filter(letter="a"):
             "siamese fighting fish","fancy rat and lab rat","mink","red fox",
             "hedgehog","guppy",]
     # fmt: on
+
     for name in pets:
         if letter in name:
             print(name)
@@ -116,7 +117,7 @@ def best_letter_for_pets():
             print(name)
         
 
-    return ""
+    return best_letter_for_pets
 
 
 def make_filler_text_dictionary():
@@ -144,13 +145,17 @@ def make_filler_text_dictionary():
     TIP: you'll need the requests library
     """
 
+    import requests
+    url = "https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength=3"
+    random_words = {}
+    for i in range(4,8): 
     
+        number = []
+        for a in range(3):
+            r = requests.get(url)
+        return r.text
 
-
-
-
-
-    return {}
+    return make_filler_text_dictionary
 
 
 def random_filler_text(number_of_words=200):
