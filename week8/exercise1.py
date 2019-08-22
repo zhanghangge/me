@@ -85,10 +85,10 @@ def pet_filter(letter="a"):
             "siamese fighting fish","fancy rat and lab rat","mink","red fox",
             "hedgehog","guppy",]
     # fmt: on
-
-    for name in pets:
+    wdd = []
+    for name in wdd:
         if letter in name:
-            print(name)
+            name.append(pets)
     
     return pet_filter
 
